@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <TextView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Heading"
+        android:background="#363232"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:id="@+id/heading"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:hint="total"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/totalstorage"/>
+    <TextView
+        android:textSize="20sp"
+        android:hint="Used"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/used"/>
+    <TextView
+        android:textSize="20sp"
+        android:hint="Available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/free"/>
+</LinearLayout>

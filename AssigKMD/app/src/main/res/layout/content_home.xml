@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.webatron.rakesh.assigkmd.Home"
+    tools:showIn="@layout/activity_home"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/weatherlayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/weatherPlace"
+            android:hint="Place"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/weather"
+            android:hint="Weather"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/weatherlayout"
+        android:text="Check battery"
+        android:id="@+id/battery"/>
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/battery"
+        android:text="Device Details"
+        android:padding="10dp"
+        android:id="@+id/device"/>
+    <Button
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/device"
+        android:text="Network Details"
+        android:id="@+id/network"
+        />
+    <Button
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/network"
+        android:text="Storege info"
+        android:id="@+id/storage"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/storage"
+        android:layout_centerHorizontal="true"
+        android:text="Monitor details"
+        android:layout_marginTop="5dp"
+        android:id="@+id/monitorvalues"/>
+</RelativeLayout>

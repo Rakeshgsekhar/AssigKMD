@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    tools:context="com.webatron.rakesh.assigkmd.AddMonitor">
+
+    <ToggleButton
+        android:padding="10dp"
+        android:id="@+id/monitorstatus"
+        android:textOn="Monitor on"
+        android:textOff="Monitor off"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="clear"
+        android:id="@+id/clear"
+        android:layout_toRightOf="@id/monitorstatus"/>
+
+
+        <RadioButton
+            android:textColor="#ffffff"
+            android:layout_below="@+id/monitorstatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weather"
+            android:checked="false"
+            android:textSize="20sp"
+            android:id="@+id/rweather"/>
+        <RadioButton
+            android:textColor="#ffffff"
+            android:layout_below="@id/rweather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Storage"
+            android:checked="false"
+            android:textSize="20sp"
+            android:id="@+id/rstorage"/>
+        <RadioButton
+            android:textColor="#ffffff"
+            android:layout_below="@id/rstorage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Battery"
+            android:textSize="20sp"
+            android:checked="false"
+            android:id="@+id/rbattery"/>
+        <RadioButton
+            android:textColor="#ffffff"
+            android:layout_below="@id/rbattery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Network"
+            android:checked="false"
+            android:clickable="true"
+            android:textSize="20sp"
+            android:id="@+id/rnetwork"/>
+        <RadioButton
+            android:textColor="#ffffff"
+            android:layout_below="@id/rnetwork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Device"
+            android:checked="false"
+            android:textSize="20sp"
+            android:id="@+id/rdevice"/>
+
+    <EditText
+        android:textColor="#ffffff"
+        android:layout_below="@id/rdevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Duration min 5 min"
+        android:id="@+id/duration"/>
+
+    <RadioGroup
+        android:id="@+id/timestamp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/duration">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hr"
+            android:id="@+id/hr"/>
+        <RadioButton
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Min"
+            android:checked="true"
+            android:id="@+id/min"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timestamp"
+        android:text="Okey"
+        android:id="@+id/confirm"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confirm"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/close"
+        android:text="StopService"/>
+</RelativeLayout>
